@@ -19,6 +19,7 @@ body {
 
 /* Navbar styling */
 .navbar {
+    width: 100%;
     box-shadow: 0 5px 4px 0 #FBAE54;
     font-family: Lalezar;
     display: flex;
@@ -80,4 +81,57 @@ body {
     border-radius: 4px;
 }
 
+/* Question Creating Box */
+.Question {
+    border: 5px white solid;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: 100px;
+    margin-right: 80px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 520px;
+    width: 35%;
+    position: relative;
+    background-color: #E27663;
+}
 
+
+.Question select {
+    font-family: Lalezar;
+    width: 50%; /* Adjust width as needed */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #132C47; /* Main dropdown background color */
+    color: white; /* Text color for the dropdown */
+    font-size: 1em;
+    appearance: none; /* Removes the default dropdown arrow in some browsers */
+    cursor: pointer;
+    text-align: center;
+    margin: 5px 3px;
+}
+
+option {
+    background-color: #FBAE54;
+    color: #132C47;
+    padding: 10px;
+}
+
+.Question button {
+    font-family: Lalezar;
+    border: none;
+    border-radius: 5px;
+    width: 50%; /* Adjust width as needed */
+    height: 10%;
+    color: white;
+    background-color: #FBAE54;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
