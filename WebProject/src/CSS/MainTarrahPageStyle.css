@@ -98,10 +98,18 @@ body {
     background-color: #E27663;
 }
 
+/* todo: change this style */
+#selection {
+    margin: auto;  /* Automatically center horizontally and vertically */
+    position: absolute;  /* Position it inside the parent */
+    top: 30%;  /* Move to the vertical center */
+    left: 50%; /* Move to the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust positioning to make it fully centered */
+}
 
 .Question select {
     font-family: Lalezar;
-    width: 50%; /* Adjust width as needed */
+    width: 100px; /* Adjust width as needed */
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -134,4 +142,45 @@ option {
 .container {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.ribbon {
+    position: absolute;
+    top: 10px; /* Adjust this to control the vertical position of the ribbon */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 60px;
+    background-color: #FBAE54; /* Main ribbon color */
+    color: white;
+    text-align: center;
+    line-height: 60px; /* Center text vertically */
+    font-family: Lalezar;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ribbon 3D shadow */
+}
+
+/* Ribbon triangle tails */
+.ribbon:before,
+.ribbon:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    border-width: 15px 10px;
+    border-style: solid;
+    border-color: #FBAE54 transparent transparent transparent; /* Ribbon triangle color */
+    z-index: -1;
+}
+
+.ribbon:before {
+    left: -20px; /* Triangle on the left */
+}
+
+.ribbon:after {
+    right: -20px; /* Triangle on the right */
 }
