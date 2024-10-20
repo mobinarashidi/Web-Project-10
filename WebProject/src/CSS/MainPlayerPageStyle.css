@@ -81,3 +81,58 @@ body {
 }
 
 
+/* Footer Styling */
+.footer {
+
+    background-color: #132C47;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    font-family: Lalezar;
+    box-shadow: 0 -5px 5px #FBAE54;
+    margin-top: 700px;
+}
+
+/* Footer content layout */
+.footer-content {
+
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    gap: 40px; /* Adds some space between sections */
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.footer-center {
+    flex: 1; /* Make all sections take equal width */
+}
+
+
+/* Footer center section with social media icons */
+.footer-center {
+    direction: rtl;
+    text-align: center; /* Keep the social icons centered */
+}
+
+.footer-center p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}

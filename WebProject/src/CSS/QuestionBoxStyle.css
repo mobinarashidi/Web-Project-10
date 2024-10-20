@@ -265,3 +265,93 @@ select:hover {
     transform: translate(-50%, -45%); /* Move it downward when clicked */
     box-shadow: 0 4px #d28f45; /* Shallower shadow to show press */
 }
+
+.questionList {
+    border: 5px white solid;
+    border-radius: 40px;
+    margin-right: auto;  /* Move it to the left */
+    margin-left: 50px;   /* Adjust distance from the left side */
+    margin-top: 100px;    /* Bring it closer to the top */
+    height: 520px;
+    width: 30%;
+    display: flex;
+    background-color: #A0DBE0;
+    position: absolute;  /* Position it freely within the parent */
+    top: 10%;            /* Move it higher on the page */
+    left: 5%;            /* Adjust it towards the left */
+}
+
+
+.text-in-questionList {
+    color: white;
+    font-family: Lalezar;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 23%;
+    margin-top: 10px;
+    position: relative; /* Enable positioning for the line */
+    display: inline-block; /* Keep the text inline and allow styling adjustments */
+
+
+
+
+    height: 45px;
+    
+}
+
+/* Footer Styling */
+.footer {
+
+    background-color: #132C47;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    font-family: Lalezar;
+    box-shadow: 0 -5px 5px #FBAE54;
+    margin-top: 150px;
+}
+
+/* Footer content layout */
+.footer-content {
+
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    gap: 40px; /* Adds some space between sections */
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+.footer-center {
+    flex: 1; /* Make all sections take equal width */
+}
+
+
+/* Footer center section with social media icons */
+.footer-center {
+    direction: rtl;
+    text-align: center; /* Keep the social icons centered */
+}
+
+.footer-center p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Social icons */
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
