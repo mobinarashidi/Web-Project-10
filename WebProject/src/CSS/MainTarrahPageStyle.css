@@ -184,3 +184,72 @@ option {
 .ribbon:after {
     right: -20px; /* Triangle on the right */
 }
+
+/* footer styles*/
+/* Footer basic reset */
+footer {
+    background-color: #132C47; /* Dark background similar to your image */
+    color: white; /* White text */
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 700px;
+    box-shadow: 0 -5px 5px #FBAE54;
+    direction: rtl;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem; /* Title size */
+    font-weight: 500;
+    font-family: Lalezar;
+    direction: rtl;
+}
+
+.footer-content p {
+    margin: 10px 0 15px;
+    font-size: 1rem;
+    color: white; /* Lighter text for description */
+    direction: rtl;
+}
+
+/* Social icons styling */
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socials li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+    color: #fba54b; /* Change to accent color on hover */
+}
+
+/* Footer bottom */
+.footer-bottom {
+    direction: rtl;
+    background-color: #1A3B5E; /* Even darker background for bottom section */
+    padding: 20px 0;
+    font-size: 0.9rem;
+
+}
+
+.footer-bottom span {
+    color: #fba54b; /* Accent color for designer name */
+    direction: rtl;
+    position: relative;
+}
+
+.footer-bottom p {
+    direction: rtl;
+    margin: 0;
+    color: #bbb; /* Lighter text for copyright info */
+}
