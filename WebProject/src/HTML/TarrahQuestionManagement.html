@@ -33,9 +33,14 @@
 <div class="container">
     <div class="Question" id="#createQuestion">
         <div class="ribbon"> طرح سوال جدید</div>
-        <label title="صورت سوال">
-            <input type="text">
-        </label>
+        <div class="label">یک سوال جدید طرح کن!</div>
+        <input class="question_marks" type="text" placeholder="صورت سوال">
+        <div class="choices">
+            <input class="choice" type="text" placeholder="گزینه 1">
+            <input class="choice" type="text" placeholder="گزینه 2">
+            <input class="choice" type="text" placeholder="گزینه 3">
+            <input class="choice" type="text" placeholder="گزینه 4">
+        </div>
         <div class="Selection">
             <select title="دسته بندی">
                 <option value="" disabled selected>دسته بندی</option>
@@ -58,7 +63,7 @@
             </select>
         </div>
 
-        <button class="container_buttons">طرح سوال</button>
+        <button class="container_buttons"  style="top: 80%">طرح سوال</button>
     </div>
 
     <div class="Question" id="#addedQuestion">

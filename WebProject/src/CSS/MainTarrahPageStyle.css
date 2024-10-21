@@ -309,7 +309,7 @@ footer {
     direction: rtl;
 }
 
-input {
+.question_marks {
     font-family: Lalezar;
     font-size: 1.2em;
     color: #FBAE54;
@@ -326,4 +326,34 @@ input {
     border: none;
     border-radius: 5px;
 
+}
+
+input::placeholder {
+    color: #E27663;
+    opacity: 100%;
+}
+
+.choice {
+    font-family: Lalezar;
+    font-size: 0.8em;
+    color: #FBAE54;
+    background-color: #132C47;
+    height: 30px;
+    width: 22%;
+    align-content: center;
+    /* Automatically center horizontally and vertically */
+    margin: -20px auto;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.choices {
+    position: relative;
+    top: 30%;
+    left: 50%; /* Move to the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust positioning to make it fully centered */
+    display: flex;
+    flex-direction: row-reverse;
 }
