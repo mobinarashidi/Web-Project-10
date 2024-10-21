@@ -275,12 +275,12 @@ select:hover {
     height: 520px;
     width: 30%;
     display: flex;
+    flex-direction: column; /* Make it stack vertically */
     background-color: #A0DBE0;
     position: absolute;  /* Position it freely within the parent */
     top: 10%;            /* Move it higher on the page */
     left: 5%;            /* Adjust it towards the left */
 }
-
 
 .text-in-questionList {
     color: white;
@@ -288,16 +288,77 @@ select:hover {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
-    margin-left: 23%;
+    margin-left: 0%;
     margin-top: 10px;
-    position: relative; /* Enable positioning for the line */
-    display: inline-block; /* Keep the text inline and allow styling adjustments */
-
-
-
-
+    position: relative;
+    display: inline-block;
     height: 45px;
-    
+    text-shadow: #FBAE54 1px 1px 1px;
+}
+
+/* Scrollable box */
+.scroll-box {
+    background-color: #fff; /* Background color for the scroll box */
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    height: 350px; /* Fixed height to allow scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    border-radius: 15px;
+    border: 2px solid #fba54b; /* Light border around the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
+
+/* Styling the scrollbar */
+.scroll-box::-webkit-scrollbar {
+    width: 20px; /* Scrollbar width */
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #FBAE54; /* Track shadow */
+    border-radius: 10px; /* Track rounded corners */
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: #FBAE54; /* Scrollbar handle color */
+    border-radius: 10px; /* Rounded handle */
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+    background: #d28f45; /* Darker  on hover */
+}
+
+/* List styling */
+.question-items {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    direction: rtl; /* Ensure text is aligned right (RTL) */
+}
+
+.question-items li {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.question-items li:hover {
+    background-color: #f0f0f0; /* Slight color change on hover */
+}
+
+li.true {
+    font-family: Lalezar;
+    color: green;
+}
+
+li.false {
+    font-family: Lalezar;
+    color: red;
 }
 
 /* Footer basic reset */
@@ -367,3 +428,5 @@ footer {
     margin: 0;
     color: #bbb; /* Lighter text for copyright info */
 }
+
+

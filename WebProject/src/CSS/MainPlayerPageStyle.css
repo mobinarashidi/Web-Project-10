@@ -97,6 +97,7 @@ footer {
     font-weight: 500;
     font-family: Lalezar;
     direction: rtl;
+    text-shadow: #A0DBE0 1px 1px 0;
 }
 
 .footer-content p {
