@@ -4,7 +4,7 @@
     font-weight: normal;
 }
 
-/* Basic Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     box-shadow: 0 5px 4px 0 #FBAE54;
     font-family: Lalezar;
     display: flex;
-    justify-content: space-between; /* Space between button and right-section */
+    justify-content: space-between;
     align-items: center;
     background-color: #A0DBE0;
     padding: 10px 10px;
@@ -52,20 +52,20 @@ body {
 .right-section {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Push the right section to the far right */
+    margin-left: auto; /* Push the right section to the right */
 }
 
 /* Logo styling */
 .logo img {
     height: 45px;
-    width: 80px; /* Ensure it's a square to make it circular */
+    width: 80px; /* Ensure it is a square */
 
 }
 
 /* Navbar links */
 .nav-links {
     display: flex;
-    margin-right: 20px; /* Space between links and the logo */
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -81,11 +81,7 @@ body {
 }
 
 
-
-
-
 .answeredBox {
-
     border: 5px white solid;
     border-radius: 40px;
     padding: 10px;
@@ -103,12 +99,12 @@ body {
 /* Ribbon styling */
 .ribbon {
     position: absolute;
-    top: 10px; /* Adjust this to control the vertical position of the ribbon */
+    top: 10px; /* handle vertical position of the ribbon */
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
     height: 60px;
-    background-color: #FBAE54; /* Main ribbon color */
+    background-color: #FBAE54; /* ribbon's color */
     color: white;
     text-align: center;
     line-height: 60px; /* Center text vertically */
@@ -117,12 +113,11 @@ body {
     font-weight: bold;
     display: flex;
     justify-content: center; /* Center the text horizontally */
-    align-items: center; /* Center the text vertically */
+    align-items: center; /* Center the text */
     z-index: 1;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ribbon 3D shadow */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Ribbon's shadow */
 }
 
-/* Ribbon triangle tails */
 .ribbon:before,
 .ribbon:after {
     content: "";
@@ -130,7 +125,7 @@ body {
     bottom: -15px;
     border-width: 15px 10px;
     border-style: solid;
-    border-color: #FBAE54 transparent transparent transparent; /* Ribbon triangle color */
+    border-color: #FBAE54 transparent transparent transparent;
     z-index: -1;
 }
 
@@ -142,7 +137,7 @@ body {
     right: -20px; /* Triangle on the right */
 }
 
-/* Random question button with 3D effect and centered using margins */
+/* Random question button with 3D effect */
 .randomQuestion {
     font-family: Lalezar;
     width: 250px;
@@ -156,10 +151,10 @@ body {
     cursor: pointer;
     box-shadow: 0 8px #d28f45; /* Shadow for 3D effect */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin: auto;  /* Automatically center horizontally and vertically */
-    position: absolute;  /* Position it inside the parent */
-    top: 30%;  /* Move to the vertical center */
-    left: 50%; /* Move to the horizontal center */
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%); /* Adjust positioning to make it fully centered */
 }
 
@@ -172,7 +167,7 @@ body {
 /* On active: simulate a button press */
 .randomQuestion:active {
     transform: translate(-50%, -45%); /* Move it downward when clicked */
-    box-shadow: 0 4px #d28f45; /* Shallower shadow to show press */
+    box-shadow: 0 4px #d28f45;
 }
 
 .ChooseQuestion {
