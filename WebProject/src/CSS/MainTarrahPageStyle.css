@@ -127,7 +127,7 @@ option {
 }
 
 .ribbon {
-    position: absolute;
+    position: absolute; /* check the sticky one */
     top: 10px; /* Adjust this to control the vertical position of the ribbon */
     left: 50%;
     transform: translateX(-50%);
@@ -175,7 +175,7 @@ footer {
     color: white; /* White text */
     padding: 25px 0;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 230px;
     box-shadow: 0 -5px 5px #FBAE54;
     direction: rtl;
 }
@@ -356,4 +356,173 @@ input::placeholder {
     transform: translate(-50%, -50%); /* Adjust positioning to make it fully centered */
     display: flex;
     flex-direction: row-reverse;
+}
+
+/* Scrollable box */
+.addedGroups {
+    background-color: #E27663; /* Background color for the scroll box */
+    padding: 15px;
+    margin: 70px auto;
+    width: 90%;
+    height: 350px; /* Fixed height to allow scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    border-radius: 15px;
+    border: 2px solid #fba54b; /* Light border around the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+}
+
+/* Styling the scrollbar */
+.addedGroups::-webkit-scrollbar {
+    width: 20px; /* Scrollbar width */
+}
+
+.addedGroups::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #FBAE54; /* Track shadow */
+    border-radius: 10px; /* Track rounded corners */
+}
+
+.addedGroups::-webkit-scrollbar-thumb {
+    background: #FBAE54; /* Scrollbar handle color */
+    border-radius: 10px; /* Rounded handle */
+}
+
+.addedGroups::-webkit-scrollbar-thumb:hover {
+    background: #d28f45; /* Darker  on hover */
+}
+
+
+
+/* styles related to main page */
+.card {
+    font-family: Lalezar;
+    margin-top: 100px;
+    margin-left: 210px;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 5px 4px 0 #1A3B5E;
+    width: 70%;
+    height: 480px;
+    background-color: #FBAE54;
+    border: #b5773a solid 5px;
+}
+
+.left-container {
+    background-color: #E27663;
+
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:430px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #1A3B5E;
+}
+
+.right-container {
+    background-color: #E27663;
+    flex: 1;
+    max-width:70%;
+    height:430px;
+    padding: 10px;
+    margin: 20px;
+    border-radius:30px;
+    box-shadow: 0 4px 8px 0 #1A3B5E;
+}
+@media only screen and (max-width: 860px) {
+    .card
+    {
+        flex-direction: column;
+        margin: 10px;
+        height: auto;
+        width: 90%;
+    }
+    .left-container{
+        flex: 1;
+        max-width:100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .card
+    {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .left-container{
+        flex: 1;
+        max-width:100%;
+    }
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #1A3B5E;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.gradienttext{
+    text-shadow: 0px 3px 0px #FBAE54;
+    color: white;
+    -webkit-background-clip: text;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:aliceblue;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    border-collapse: collapse;
+}
+
+td {
+
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+td:first-child {
+    font-weight: bold;
+    text-shadow: 0px 3px 0px #FBAE54;
+    color: #333333;
+}
+.credit a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+}
+
+.credit {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-family:Lalezar;
 }
