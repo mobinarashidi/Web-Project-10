@@ -87,7 +87,7 @@ footer {
     color: white; /* White text */
     padding: 25px 0;
     text-align: center;
-    margin-top: 700px;
+    margin-top: 200px;
     box-shadow: 0 -5px 5px #FBAE54;
     direction: rtl;
 }
@@ -150,3 +150,108 @@ footer {
     color: #bbb; /* Lighter text for copyright info */
 }
 
+
+/* Ranking Table Styling */
+.ranking-table {
+    direction: rtl;
+    font-family: Lalezar;
+    margin-top: 50px;
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 210px;
+}
+
+.ranking-table thead {
+    background-color: #FBAE54;
+    color: white;
+}
+
+.ranking-table th,
+.ranking-table td {
+    padding: 15px;
+    text-align: center;
+    border-radius: 80px;
+}
+
+.ranking-table tbody tr:nth-child(even) {
+    border-radius: 80px;
+    background-color: #1A3B5E;
+    color: #A0DBE0;
+}
+
+.ranking-table tbody tr:nth-child(odd) {
+    background-color: #1A3B5E;
+    border-radius: 80px;
+    color: #bbbbbb;
+}
+
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Container to position profile cards */
+.profile-container {
+    position: relative;
+}
+
+/* Profile card styling */
+.profile-card {
+    display: none;
+    position: absolute;
+    top: -10px;
+    left: 150px;
+    width: 250px;
+    background: #fff;
+    padding: unset;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Show profile card on image focus */
+.profile-trigger:focus + .profile-card {
+    display: inline-block;
+}
+
+/* Keep the profile card visible while focused */
+.profile-card:focus-within {
+    display: inline-block;
+}
+
+/* Profile card header styling */
+.profile-card header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile-card h1 {
+    direction: rtl;
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+.profile-card h2 {
+    direction: rtl;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Profile card button styling */
+.profile-card button {
+    margin: 10px 5px;
+    padding: 10px;
+    background-color: #6c7ae0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Lalezar;
+}
+
+.profile-card button:hover {
+    background-color: #5a65c1;
+}
