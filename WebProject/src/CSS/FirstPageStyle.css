@@ -17,7 +17,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url("../Picture/LightBack.jpg");
+    background-image: url("../photo/LightBack.jpg");
     background-attachment: scroll;
     background-size: 120% 120%;
 }
