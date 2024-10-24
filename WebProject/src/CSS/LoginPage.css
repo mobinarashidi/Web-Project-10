@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Lalezar;
+    src: url("../Font/Lalezar-Regular.ttf");
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Full height for body and html */
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #132C47;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.form-box {
+    background-color: #FBAE54;
+    display: flex;
+    justify-content:space-evenly;
+    border-radius: 30px;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    width: 300px;
+}
+
+label {
+    display: block;
+    justify-content:space-evenly;
+    margin-bottom: 5px;
+    color: #132C47;
+    font-family: Lalezar;
+    font-size:100%;
+    direction: rtl;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #132C47;
+    color: #fff;
+    font-family: Lalezar;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 130%;
+}
+
+button:hover {
+    background-color: #0b3a57;
+}
+
+
+footer {
+    background-color: #132C47;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 -5px 5px #FBAE54;
+    direction: rtl;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: Lalezar;
+    direction: rtl;
+}
+
+.footer-content p {
+    margin: 10px 0 15px;
+    font-size: 1rem;
+    color: white;
+    direction: rtl;
+}
+
+/* Social icons styling */
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socials li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+    color: #fba54b;
+}
+
+.footer-bottom {
+    direction: rtl;
+    background-color: #1A3B5E;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom span {
+    color: #fba54b;
+    direction: rtl;
+}
+
+.footer-bottom p {
+    direction: rtl;
+    margin: 0;
+    color: #bbb;
+}
+

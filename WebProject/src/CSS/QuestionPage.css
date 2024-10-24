@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Lalezar;
+    src: url("../Font/Lalezar-Regular.ttf");
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #132C47;
+    height: 100vh;
+}
+
+.navbar {
+    box-shadow: 0 5px 4px 0 #FBAE54;
+    font-family: Lalezar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A0DBE0;
+    padding: 10px 10px;
+    color: white;
+    font-size: 17px;
+
+}
+
+.navbar-btn {
+    font-family: Lalezar;
+    background-color: #FBAE54;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 70px;
+}
+
+.navbar-btn:hover {
+    background-color: #FBAE80;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.logo img {
+    height: 45px;
+    width: 80px; 
+
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px; 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    background-color: #FBAE80;
+    border-radius: 4px;
+}
+
+
+.quiz-container {
+    background-color: #A0DBE0;
+    padding: 5%;
+    border-radius: 30px;
+    width: 1200px;
+    /* display: flex; */
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    font-family: Lalezar;
+    font-size: large;
+    /* justify-content:space-evenly; */
+}
+
+.score {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.score p {
+    color: #203340;
+    font-size: 18px;
+}
+
+.question-box {
+    background-color: #FBAE54;
+    padding: 7%;
+    width: 1050px;
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 45px;
+    font-family: Lalezar;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    font-family: Lalezar;
+    /* justify-content:space-evenly; */
+}
+
+.option {
+    flex: 1 1 45%;
+    padding: 3%;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Lalezar;
+}
+
+.option.correct {
+    background-color: #4CAF50; /* سبز */
+}
+
+.option.wrong {
+    background-color: #f44336; /* قرمز */
+}
+
+.option {
+    background-color: #132C47; /* آبی تیره */
+}
+
+.option:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #132C47;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    /* margin-top: 220px; */
+    box-shadow: 0 -5px 5px #FBAE54;
+    direction: rtl;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem; /* title size */
+    font-weight: 500;
+    font-family: Lalezar;
+    direction: rtl;
+    text-shadow: #A0DBE0 1px 1px 0;
+}
+
+.footer-content p {
+    margin: 10px 0 15px;
+    font-size: 1rem;
+    color: white; /* white text for description */
+    direction: rtl;
+}
+
+/* Social icons styling */
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.socials li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.socials li a:hover {
+    color: #fba54b; /* Change color when hover */
+}
+
+/* Footer bottom */
+.footer-bottom {
+    direction: rtl;
+    background-color: #1A3B5E; /* lighter background for bottom section */
+    padding: 20px 0;
+    font-size: 0.9rem;
+
+}
+
+.footer-bottom span {
+    color: #fba54b;
+    direction: rtl;
+    /* position: relative; */
+}
+
+.footer-bottom p {
+    direction: rtl;
+    margin: 0;
+    color: #bbb; /* text for copyright info */
+}
+
