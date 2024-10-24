@@ -6,6 +6,8 @@
     <title>سوال پیچ</title>
     <link rel="shortcut icon" type="x-icon" href="../photo/logo.png">
     <link rel="stylesheet" href="../CSS/QuestionBoxStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -19,7 +21,7 @@
         <!-- Navbar links -->
         <div class="nav-links">
             <a href="QuestionBox.html">مدیریت سوالات</a>
-            <a href="#">جدول امتیازات</a>
+            <a href="ScoreTable.html">جدول امتیازات</a>
             <a href="MainPlayerPage.html">صفحه اصلی</a>
         </div>
 
@@ -27,8 +29,6 @@
         <div class="logo">
             <img src="../photo/logo.png" alt="Logo" />
         </div>
-
-
 
     </div>
 </nav>
@@ -41,7 +41,7 @@
     <div class="ChooseQuestion">
        <div class="label">دسته بندی مورد نظر انتخاب کن و خودت به چالش بکش!  </div>
         <select id="category">
-            <option value="notChosen">دسته بندی ها</option>
+            <option value="" disabled selected>دسته بندی ها</option>
             <option value="first">تاریخی</option>
             <option value="second">ریاضی</option>
             <option value="third">هوش</option>
@@ -51,6 +51,47 @@
     </div>
 
 </div>
+
+
+<div class="questionList">
+<div class="text-in-questionList">سوال های پاسخ داده شده</div>
+
+    <!-- Scrollable box inside the questionList -->
+    <div class="scroll-box">
+        <ul class="question-items">
+            <li class="true">سوال 1: متن سوال اول</li>
+            <li class="true">سوال 2: متن سوال دوم</li>
+            <li class="false">سوال 3: متن سوال سوم</li>
+            <li class="true">سوال 4: متن سوال چهارم</li>
+            <li class="false">سوال 5: متن سوال پنجم</li>
+            <li class="false">سوال 6: متن سوال ششم</li>
+            <li class="true">سوال 7: متن سوال هفتم</li>
+            <li class="false">سوال 8: متن سوال هشتم</li>
+            <li class="true">سوال 9: متن سوال نهم</li>
+            <li class="false">سوال 10: متن سوال دهم</li>
+        </ul>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>سوال پیچ</h3>
+        <p>آدرس : ایران ، تهران ، میدان آزادی ، خیابان قاسمی ، دانشگاه صنعتی شریف</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>  تمامی حقوق محفوظ است © 2024 ، طراحی شده توسط<span> تیم سوال پیچ </span> </p>
+    </div>
+</footer>
+
+
+
 
 
 </body>
