@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>مدیریت سوالات</title>
+    <link rel="shortcut icon" type="x-icon" href="../photo/logo.png">
+    <link rel="stylesheet" href="../CSS/TarrahPagesStyle.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <!-- Button on the left side -->
+    <button class="navbar-btn">خروج</button>
+
+    <!-- Navbar links and Logo on the right side -->
+    <div class="right-section">
+        <!-- Navbar links -->
+        <div class="nav-links">
+            <a href="TarrahQuestionManagement.html">مدیریت سوالات</a>
+            <a href="TarrahGroupManagement.html">مدیریت دسته بندی ها</a>
+            <a href="TarrahMain.html">صفحه اصلی</a>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../photo/logo.png" alt="Logo" />
+        </div>
+    </div>
+
+
+</nav>
+
+<div class="container">
+    <div class="Question" id="#createQuestion">
+        <div class="ribbon"> طرح سوال جدید</div>
+        <div class="label">یک سوال جدید طرح کن!</div>
+        <input class="question_marks" type="text" placeholder="صورت سوال">
+        <div class="choices">
+            <input class="choice" type="text" placeholder="گزینه 1">
+            <input class="choice" type="text" placeholder="گزینه 2">
+            <input class="choice" type="text" placeholder="گزینه 3">
+            <input class="choice" type="text" placeholder="گزینه 4">
+        </div>
+        <div class="Selection">
+            <select title="دسته بندی">
+                <option value="" disabled selected>دسته بندی</option>
+                <option>هوش</option>
+                <option>ریاضی</option>
+                <option>سینما</option>
+            </select>
+            <select title="درجه سختی">
+                <option value="" disabled selected>درجه سختی</option>
+                <option value="simple">ساده</option>
+                <option value="medium">متوسط</option>
+                <option value="hard">سخت</option>
+            </select>
+            <select title="گزینه درست">
+                <option value="" disabled selected>گزینه درست</option>
+                <option value="1">گزینه 1</option>
+                <option value="2">گزینه 2</option>
+                <option value="3">گزینه 3</option>
+                <option value="4">گزینه 4</option>
+            </select>
+        </div>
+
+        <button class="container_buttons"  style="top: 80%">طرح سوال</button>
+    </div>
+
+    <div class="Question" id="#addedQuestion" style="overflow-y: auto;">
+        <div class="ribbon" >سوال های موجود</div>
+        <div class="addedGroups">
+            <h1><b>یک صورت سوال نمونه؟</b></h1>
+            <h1><b>پایتخت ایران کجاست؟</b></h1>
+            <h1><b>اسم این وبسایت چیه؟</b></h1>
+            <h1><b>سعدی شاعر قرن چندمه؟</b></h1>
+            <h1><b>سری فیلم های جنگ ستارگان تولید چه کشوریه؟</b></h1>
+            <h1><b>تاریخ شروع جنگ جهانی اول رو بگو!</b></h1>
+            <h1><b>sin(30) = ?</b></h1>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>سوال پیچ</h3>
+        <p>آدرس : ایران ، تهران ، میدان آزادی ، خیابان قاسمی ، دانشگاه صنعتی شریف</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>  تمامی حقوق محفوظ است © 2024 ، طراحی شده توسط<span> تیم سوال پیچ </span> </p>
+    </div>
+</footer>
+
+</body>
+</html>
