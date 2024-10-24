@@ -350,10 +350,10 @@ input::placeholder {
 
 
 .choices {
-    position: relative;
-    top: 30%;
+    position: absolute; /* Make it position relative to the parent */
+    top: 60%; /* Move to the vertical center */
     left: 50%; /* Move to the horizontal center */
-    transform: translate(-50%, -50%); /* Adjust positioning to make it fully centered */
+    transform: translate(-50%, -50%); /* Fully center the element */
     display: flex;
     flex-direction: row-reverse;
 }
@@ -397,6 +397,7 @@ input::placeholder {
     font-family: Lalezar;
     margin-top: 100px;
     margin-left: 210px;
+    margin-right: 210px;
     direction: rtl;
     display: flex;
     flex-direction: row;
@@ -462,6 +463,17 @@ input::placeholder {
     }
 }
 
+@media only screen and (max-width: 1070px){
+    .container {
+        flex-direction: column;
+        margin: 10px;
+        height: auto;
+        width: 100%;
+    }
+    .Question {
+        width: 80%;
+    }
+}
 .profile {
     width: 200px;
     height: 200px;
