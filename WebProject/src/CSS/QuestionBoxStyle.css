@@ -80,7 +80,6 @@ body {
     border-radius: 4px;
 }
 
-
 .answeredBox {
     border: 5px white solid;
     border-radius: 40px;
@@ -424,4 +423,77 @@ footer {
     color: #bbb; /* Lighter text for copyright info */
 }
 
+
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .answeredBox, .questionList {
+        width: 90%; /* Take up most of the screen width */
+        margin: 20px auto; /* Center the boxes */
+        height: auto; /* Auto height to allow content to fit */
+    }
+    .ChooseQuestion {
+        margin-right: 120px;
+    }
+    .questionList {
+        position: relative; /* Remove absolute positioning */
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-top: 20px; /* Add space from the top */
+    }
+
+    /* Scroll box height adjustment for smaller screens */
+    .scroll-box {
+        height: 200px;
+    }
+
+    /* Adjust buttons for mobile */
+    .randomQuestion, .selectedQuestion {
+        width: 180px;
+        height: 50px;
+        font-size: 0.9em;
+    }
+
+    select {
+        width: 160px;
+        font-size: 0.9em;
+    }
+
+    .label, .text-in-questionList {
+        font-size: 1em;
+    }
+}
+
+/* Very small mobile screens (max-width: 480px) */
+@media (max-width: 600px) {
+    .answeredBox, .questionList {
+        width: 100%; /* Full width on small mobile devices */
+        margin: 10px auto;
+        height: auto; /* Auto height to fit content */
+    }
+    .ChooseQuestion {
+        margin-left: 120px;
+        width: 100%;
+    }
+    .scroll-box {
+        height: 150px; /* Further reduce scroll-box height */
+    }
+
+    /* Adjust buttons for small screens */
+    .randomQuestion, .selectedQuestion {
+        width: 150px;
+        height: 45px;
+        font-size: 0.8em;
+    }
+
+    select {
+        width: 140px;
+        font-size: 0.8em;
+    }
+
+    .label, .text-in-questionList {
+        font-size: 0.9em;
+    }
+}
 

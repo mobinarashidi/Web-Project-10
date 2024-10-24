@@ -193,6 +193,7 @@ footer {
     margin: 20px;
     border-radius:30px;
     box-shadow: 0 4px 8px 0 #1A3B5E;
+    display: block;
 }
 @media only screen and (max-width: 860px) {
     .card
@@ -206,6 +207,10 @@ footer {
         flex: 1;
         max-width:100%;
     }
+    .right-container{
+        flex: 1;
+        max-width: 100%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .card
@@ -216,6 +221,10 @@ footer {
     .left-container{
         flex: 1;
         max-width:100%;
+    }
+    .right-container{
+        flex: 1;
+        max-width: 100%;
     }
 }
 .profile {
