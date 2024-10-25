@@ -26,7 +26,6 @@ body {
     padding: 10px 10px;
     color: white;
     font-size: 17px;
-
 }
 
 .navbar-btn {
@@ -44,21 +43,21 @@ body {
 .navbar-btn:hover {
     background-color: #FBAE80;
 }
+
 .right-section {
     display: flex;
     align-items: center;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .logo img {
     height: 45px;
-    width: 80px; 
-
+    width: 80px;
 }
 
 .nav-links {
     display: flex;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -73,20 +72,18 @@ body {
     border-radius: 4px;
 }
 
-
 .quiz-container {
     background-color: #A0DBE0;
     padding: 5%;
     border-radius: 30px;
-    width: 1200px;
-    /* display: flex; */
+    width: 100%;
+    max-width: 1200px;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     font-family: Lalezar;
     font-size: large;
-    /* justify-content:space-evenly; */
 }
 
 .score {
@@ -102,14 +99,15 @@ body {
 .question-box {
     background-color: #FBAE54;
     padding: 7%;
-    width: 1050px;
+    width: 100%;
+    max-width: 1050px;
     text-align: center;
     border-radius: 30px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    font-size: 45px;
+    font-size: 2.5rem;
     font-family: Lalezar;
 }
 
@@ -121,7 +119,6 @@ body {
     margin-right: auto;
     margin-top: 3%;
     font-family: Lalezar;
-    /* justify-content:space-evenly; */
 }
 
 .option {
@@ -129,61 +126,83 @@ body {
     padding: 3%;
     border-radius: 30px;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
     border: none;
     cursor: pointer;
     font-family: Lalezar;
-}
-
-.option.correct {
     background-color: #132C47;
 }
 
-.option.correct:focus {
-    background-color: #4CAF50;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 3%;
+        margin-top: 100px;
+    }
+    
+    .question-box {
+        font-size: 2rem;
+        padding: 5%;
+    }
+
+    .options {
+        gap: 5px;
+    }
+
+    .option {
+        flex: 1 1 100%;
+        font-size: 1rem;
+        padding: 2%;
+    }
+    footer {
+        margin-top: 130px;
+    }
 }
 
-.option.wrong {
-    background-color: #132C47;
+@media (max-width: 480px) {
+    .quiz-container {
+       margin-top: 100px;
+    }
+    .question-box {
+        font-size: 1.5rem;
+        padding: 4%;
+    }
+
+    .option {
+        font-size: 0.9rem;
+        padding: 2%;
+    }
+
 }
 
-.option.wrong:focus {
-    background-color: #bb2012;
-}
-
-.option {
-    background-color: #132C47; 
-}
 
 footer {
     background-color: #132C47;
     color: white;
     padding: 25px 0;
     text-align: center;
-    /* margin-top: 220px; */
     box-shadow: 0 -5px 5px #FBAE54;
     direction: rtl;
 }
 
 .footer-content h3 {
-    font-size: 1.8rem; /* title size */
+    font-size: 1.8rem;
     font-weight: 500;
     font-family: Lalezar;
-    direction: rtl;
     text-shadow: #A0DBE0 1px 1px 0;
 }
 
 .footer-content p {
     margin: 10px 0 15px;
     font-size: 1rem;
-    color: white; /* white text for description */
-    direction: rtl;
+    color: white;
 }
 
-/* Social icons styling */
 .socials {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .socials li {
@@ -199,27 +218,14 @@ footer {
 }
 
 .socials li a:hover {
-    color: #fba54b; /* Change color when hover */
+    color: #fba54b;
 }
 
-/* Footer bottom */
 .footer-bottom {
-    direction: rtl;
-    background-color: #1A3B5E; /* lighter background for bottom section */
+    background-color: #1A3B5E;
     padding: 20px 0;
     font-size: 0.9rem;
-
+    color: #bbb;
 }
 
-.footer-bottom span {
-    color: #fba54b;
-    direction: rtl;
-    /* position: relative; */
-}
-
-.footer-bottom p {
-    direction: rtl;
-    margin: 0;
-    color: #bbb; /* text for copyright info */
-}
 
