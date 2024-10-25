@@ -142,9 +142,24 @@ footer {
     color: #bbb;
 }
 
+
 .logo {
+    width: 80px;
+    height: auto;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 100px;    height: auto;
+    top: 20px;
+    right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50px; 
+    }
 }
