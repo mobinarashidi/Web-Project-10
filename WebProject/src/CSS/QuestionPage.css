@@ -136,19 +136,23 @@ body {
 }
 
 .option.correct {
-    background-color: #4CAF50; /* سبز */
+    background-color: #132C47;
+}
+
+.option.correct:focus {
+    background-color: #4CAF50;
 }
 
 .option.wrong {
-    background-color: #f44336; /* قرمز */
+    background-color: #132C47;
+}
+
+.option.wrong:focus {
+    background-color: #bb2012;
 }
 
 .option {
-    background-color: #132C47; /* آبی تیره */
-}
-
-.option:hover {
-    opacity: 0.9;
+    background-color: #132C47; 
 }
 
 footer {
