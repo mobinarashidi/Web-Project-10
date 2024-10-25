@@ -52,11 +52,30 @@ body {
     .logo {
         width: 60px; 
     }
+    .header {
+        margin-top: 240px;
+    }
+    .button {
+        margin-top: 50px;
+    }
+    footer {
+        margin-top: 100px;
+    }
+    
 }
 
 @media (max-width: 480px) {
     .logo {
         width: 50px; 
+    }
+    .header {
+        margin-top: 240px;
+    }
+    .button {
+        margin-top: 50px;
+    }
+    footer {
+        margin-top: 100px;
     }
 }
 
@@ -154,48 +173,3 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .footer-content h3 {
-        font-size: 1.5rem;
-    }
-
-    .footer-content p {
-        font-size: 0.9rem;
-    }
-
-    .socials li a {
-        font-size: 1.1rem;
-    }
-
-    .footer-bottom {
-        font-size: 0.8rem;
-        padding: 15px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .footer-content p {
-        font-size: 0.8rem;
-    }
-
-    .socials {
-        flex-direction: column;
-    }
-
-    .socials li {
-        margin: 5px 0;
-    }
-
-    .socials li a {
-        font-size: 1rem;
-    }
-
-    .footer-bottom {
-        font-size: 0.7rem;
-        padding: 10px 0;
-    }
-}
